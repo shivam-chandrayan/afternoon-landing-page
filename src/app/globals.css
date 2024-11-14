@@ -19,3 +19,12 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+h1 {
+  font-family: "Libre Baskerville", serif;
+}
+
+p {
+  font-family: "inter", sans-serif;
+  font-weight: 200;
+}
