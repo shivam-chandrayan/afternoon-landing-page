@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const featuresList = [
   {
@@ -45,16 +45,29 @@ const featuresList = [
   },
 ];
 
-const activeFeatureStyles = `
-    bg-primary text-white
-`;
-
 const Features = () => {
   const [activeFeatureIndex, setActiveFeatureIndex] = useState(0);
+  const [fadeState, setFadeState] = useState("opacity-100");
 
   const handleClick = (index: number) => {
     setActiveFeatureIndex(index);
   };
+
+  // Automatically switch activeFeatureIndex every 5 seconds
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setFadeState("opacity-0"); // Start fade out
+      setTimeout(() => {
+        setActiveFeatureIndex(
+          (prevIndex) => (prevIndex + 1) % featuresList.length
+        );
+        setFadeState("opacity-100"); // Fade in the new content
+      }, 300); // Match this duration with the CSS transition time
+    }, 5000);
+
+    // Cleanup the interval on component unmount
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <div className="features-section mx-40 mt-40">
@@ -65,8 +78,10 @@ const Features = () => {
         <div>
           {featuresList.map((feature, index) => (
             <div
-              className={`p-4 cursor-pointer font-medium text-xl ${
-                activeFeatureIndex === index ? activeFeatureStyles : null
+              className={`p-4 mb-2 cursor-pointer font-medium text-xl ${
+                activeFeatureIndex === index
+                  ? "bg-primary text-white"
+                  : "bg-gray-100"
               }`}
               onClick={() => handleClick(index)}
               key={index}
@@ -76,16 +91,14 @@ const Features = () => {
           ))}
         </div>
         <div className="flex items-center">
-          <div>
-            <p className="mb-4 text-font-secondary text-md">
+          <div className={`transition-opacity duration-300 ${fadeState}`}>
+            <p className="mb-4 text-font-secondary text-lg">
               {featuresList[activeFeatureIndex].desc}
             </p>
-            <div className="text-font-primary text-md">
+            <div className="text-font-primary text-lg">
               {featuresList[activeFeatureIndex].highlights.map((h, i) => (
                 <div className="flex mb-2 gap-2" key={i}>
-                  {/* <div> */}
                   <img className="w-4" src="/circle-check-solid.svg" alt="" />
-                  {/* </div> */}
                   <div>{h}</div>
                 </div>
               ))}

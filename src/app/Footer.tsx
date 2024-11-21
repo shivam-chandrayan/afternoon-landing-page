@@ -8,7 +8,11 @@ const Footer = () => {
             Focus on growing your business, while Afternoon takes care of your
             bookkeeping, income and sales taxes.
           </p>
-          <a href="" className="bg-white text-primary py-4 px-20 font-bold">
+          <a
+            href="https://cal.com/team/afternoon.co/demo"
+            target="_blank"
+            className="bg-white text-primary py-4 px-20 font-bold"
+          >
             Get Early Access
           </a>
         </div>
@@ -17,13 +21,16 @@ const Footer = () => {
         <div className="flex justify-between">
           <img src="logo with name.svg" alt="" className="w-2/5" />
           <div className="socials flex text-font-primary items-end gap-6 mb-4">
-            <a href="">
+            <a href="mailto:support@afternoon.co">
               <img src="envelope-solid.svg" alt="" className="w-4" />
             </a>
-            <a href="">
+            <a
+              href="https://www.linkedin.com/company/afternoon-co/"
+              target="_blank"
+            >
               <img src="linkedin-brands-solid.svg" alt="" className="w-4" />
             </a>
-            <a href="">
+            <a href="https://x.com/afternoonHQ" target="_blank">
               <img src="x-twitter-brands-solid.svg" alt="" className="w-4" />
             </a>
           </div>

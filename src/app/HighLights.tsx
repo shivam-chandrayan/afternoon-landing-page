@@ -19,7 +19,7 @@ const highlightList = [
 
 const Highlights = () => {
   return (
-    <div className="highlightSection mx-40 mt-40">
+    <div className="highlightSection mx-40 mt-40 mb-20">
       <h1 className="text-4xl text-center text-font-primary">
         Effortless sales tax compliance
       </h1>
@@ -32,8 +32,8 @@ const Highlights = () => {
         {highlightList.map((h, i) => (
           <div key={i} className="flex flex-col items-center text-center">
             <img src={`${h.title}.png`} alt="" className="w-2/3" />
-            <h3 className="text-xl text-font-primary">{h.title}</h3>
-            <p className="text-md text-font-secondary">{h.desc}</p>
+            <h3 className="mt-4 text-xl text-font-primary">{h.title}</h3>
+            <p className="text-sm text-font-secondary w-4/5">{h.desc}</p>
           </div>
         ))}
       </div>

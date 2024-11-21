@@ -14,7 +14,8 @@ export default {
         primary: "#ff4b05",
         font: {
           primary: "#0F1A3A",
-          secondary: "#6B7280",
+          // secondary: "#6B7280",
+          secondary: "#71717a",
         },
       },
     },

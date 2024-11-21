@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-export default function NavBar() {
+const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -67,30 +67,32 @@ export default function NavBar() {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
             <div className="flex shrink-0 items-center">
-              <img
-                className="h-8 w-auto"
-                src="/logo with name.svg"
-                alt="Afternoon co"
-              />
+              <a href="/">
+                <img
+                  className="h-8 w-auto"
+                  src="/logo with name.svg"
+                  alt="Afternoon co"
+                />
+              </a>
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
                 <a
-                  href="#"
-                  className="rounded-md px-3 py-2 text-sm font-medium text-font-secondary hover:underline"
+                  href="/about"
+                  className="rounded-md px-3 py-2 text-sm font-medium text-font-primary hover:underline"
                 >
                   About
                 </a>
                 <a
-                  href="#"
-                  className="rounded-md px-3 py-2 text-sm font-medium text-font-secondary hover:underline"
+                  href="https://www.afternoon.co/login"
+                  className="rounded-md px-3 py-2 text-sm font-medium text-font-primary hover:underline"
                 >
                   Login
                 </a>
                 {/* CTA Button */}
                 <a
-                  href="#signup"
-                  className="px-4 py-2 text-white bg-primary hover:bg-primary-dark"
+                  href="https://cal.com/team/afternoon.co/demo"
+                  className="px-4 py-2 text-white bg-primary hover:bg-font-primary"
                 >
                   Get Early Access
                 </a>
@@ -105,20 +107,20 @@ export default function NavBar() {
         <div className="sm:hidden" id="mobile-menu">
           <div className="space-y-1 px-2 pb-3 pt-2">
             <a
-              href="#"
+              href="/about"
               className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
             >
               About
             </a>
             <a
-              href="#"
+              href="https://www.afternoon.co/login"
               className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
             >
               Login
             </a>
             {/* CTA Button */}
             <a
-              href="#signup"
+              href="https://cal.com/team/afternoon.co/demo"
               className="block px-4 py-2 my-2 text-white bg-primary rounded-full hover:bg-primary-dark"
             >
               Get Early Access
@@ -128,4 +130,6 @@ export default function NavBar() {
       )}
     </nav>
   );
-}
+};
+
+export default NavBar;

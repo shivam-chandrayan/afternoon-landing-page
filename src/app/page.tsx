@@ -3,6 +3,7 @@ import NavBar from "@/app/Navbar";
 import Image from "next/image";
 import Highlights from "./HighLights";
 import Footer from "./Footer";
+import FAQ from "./FAQ";
 
 export default function Home() {
   return (
@@ -21,8 +22,9 @@ export default function Home() {
             </h2>
             <div className="pt-16">
               <a
-                className="bg-primary py-4 px-16 mt-8 text-white text-lg font-semibold"
-                href=""
+                className="bg-primary py-4 px-16 mt-8 text-white text-lg font-semibold hover:bg-font-primary"
+                href="https://cal.com/team/afternoon.co/demo"
+                target="_blank"
               >
                 Get Early Access
               </a>
@@ -34,6 +36,8 @@ export default function Home() {
       <Features />
 
       <Highlights />
+
+      <FAQ />
 
       <Footer />
     </div>
