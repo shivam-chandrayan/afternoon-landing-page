@@ -1,6 +1,8 @@
-import Features from "@/components/Features";
-import NavBar from "@/components/Navbar";
+import Features from "@/app/Features";
+import NavBar from "@/app/Navbar";
 import Image from "next/image";
+import Highlights from "./HighLights";
+import Footer from "./Footer";
 
 export default function Home() {
   return (
@@ -13,10 +15,10 @@ export default function Home() {
             <h1 className="text-4xl text-font-primary">
               All-in-one bookkeeping and tax platform for ecommerce brands
             </h1>
-            <p className="text-md mt-4 text-font-secondary">
+            <h2 className="text-md mt-4 text-font-secondary">
               Focus on growing your business, while Afternoon takes care of your
               bookkeeping, income and sales taxes.
-            </p>
+            </h2>
             <div className="pt-16">
               <a
                 className="bg-primary py-4 px-16 mt-8 text-white text-lg font-semibold"
@@ -30,6 +32,10 @@ export default function Home() {
       </div>
 
       <Features />
+
+      <Highlights />
+
+      <Footer />
     </div>
   );
 }
