@@ -9,8 +9,8 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="sticky">
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <nav className="fixed w-screen z-50">
+      <div className="px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* <!-- Mobile menu button--> */}
@@ -77,20 +77,20 @@ export default function NavBar() {
               <div className="flex space-x-4">
                 <a
                   href="#"
-                  className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  className="rounded-md px-3 py-2 text-sm font-medium text-font-secondary hover:underline"
                 >
                   About
                 </a>
                 <a
                   href="#"
-                  className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  className="rounded-md px-3 py-2 text-sm font-medium text-font-secondary hover:underline"
                 >
                   Login
                 </a>
                 {/* CTA Button */}
                 <a
                   href="#signup"
-                  className="px-4 py-2 text-white bg-primary rounded-full hover:bg-primary-dark"
+                  className="px-4 py-2 text-white bg-primary hover:bg-primary-dark"
                 >
                   Get Early Access
                 </a>
