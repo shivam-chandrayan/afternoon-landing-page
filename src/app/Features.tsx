@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 import { useState, useEffect } from "react";
 
 const featuresList = [
@@ -82,7 +82,7 @@ const Features = () => {
             <div className="text-font-primary text-lg">
               {feature.highlights.map((h, i) => (
                 <div className="flex mb-2 gap-2" key={i}>
-                  <Image className="w-4" src="/circle-check-solid.svg" alt="" />
+                  <img className="w-4" src="/circle-check-solid.svg" alt="" />
                   <p className="text-sm">{h}</p>
                 </div>
               ))}
@@ -116,11 +116,7 @@ const Features = () => {
               <div className="text-font-primary text-lg">
                 {featuresList[activeFeatureIndex].highlights.map((h, i) => (
                   <div className="flex mb-2 gap-2" key={i}>
-                    <Image
-                      className="w-4"
-                      src="/circle-check-solid.svg"
-                      alt=""
-                    />
+                    <img className="w-4" src="/circle-check-solid.svg" alt="" />
                     <div>{h}</div>
                   </div>
                 ))}

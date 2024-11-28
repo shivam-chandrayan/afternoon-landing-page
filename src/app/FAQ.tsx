@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 import { useState } from "react";
 import Accordion from "./Accordion";
 
@@ -40,7 +40,7 @@ const FAQ = () => {
       <div className="relative">
         {/* Spinning SVG */}
         <div className="absolute inset-0 flex justify-center items-center -z-10">
-          <Image src="logo.svg" alt="" className="spin w-1/2 opacity-50" />
+          <img src="logo.svg" alt="" className="spin w-1/2 opacity-50" />
         </div>
         <p className="text-font-secondary text-md mb-8">
           Frequently Asked Questions

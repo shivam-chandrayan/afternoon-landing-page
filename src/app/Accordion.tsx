@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 
 const Accordion = ({
   title,
@@ -19,7 +19,7 @@ const Accordion = ({
       >
         <h2 className="hover:underline">{title}</h2>
         {isOpen ? (
-          <Image
+          <img
             className={`w-4 transform origin-center transition duration-200 ease-out ${
               isOpen && "!rotate-180"
             }`}
@@ -27,7 +27,7 @@ const Accordion = ({
             alt=""
           />
         ) : (
-          <Image
+          <img
             className={`w-4 transform origin-center transition duration-200 ease-out ${
               isOpen && "!rotate-180"
             }`}

@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const highlightList = [
   {
     title: "Monitor exposure",
@@ -33,7 +31,7 @@ const Highlights = () => {
       <div className="mt-12 lg:mt-20 grid grid-cols-1 sm:grid-cols-2 gap-8 lg:mx-20 xl:mx-40">
         {highlightList.map((h, i) => (
           <div key={i} className="flex flex-col items-center text-center">
-            <Image src={`${h.title}.png`} alt="" className="w-1/3 sm:w-2/3" />
+            <img src={`${h.title}.png`} alt="" className="w-1/3 sm:w-2/3" />
             <h3 className="mt-4 text-xl text-font-primary">{h.title}</h3>
             <p className="text-sm text-font-secondary w-4/5">{h.desc}</p>
           </div>

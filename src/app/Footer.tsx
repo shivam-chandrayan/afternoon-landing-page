@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -22,19 +21,19 @@ const Footer = () => {
       </div>
       <div className="pt-20 px-8">
         <div className="flex justify-between">
-          <Image src="logo with name.svg" alt="" className="w-2/5" />
+          <img src="logo with name.svg" alt="" className="w-2/5" />
           <div className="socials flex text-font-primary items-end gap-6 mb-2 sm:mb-4">
             <Link href="mailto:support@afternoon.co">
-              <Image src="envelope-solid.svg" alt="" className="w-4" />
+              <img src="envelope-solid.svg" alt="" className="w-4" />
             </Link>
             <Link
               href="https://www.linkedin.com/company/afternoon-co/"
               target="_blank"
             >
-              <Image src="linkedin-brands-solid.svg" alt="" className="w-4" />
+              <img src="linkedin-brands-solid.svg" alt="" className="w-4" />
             </Link>
             <Link href="https://x.com/afternoonHQ" target="_blank">
-              <Image src="x-twitter-brands-solid.svg" alt="" className="w-4" />
+              <img src="x-twitter-brands-solid.svg" alt="" className="w-4" />
             </Link>
           </div>
         </div>
