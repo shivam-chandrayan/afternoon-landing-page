@@ -12,7 +12,7 @@ const NavBar = () => {
 
   return (
     <nav className="fixed w-screen z-50">
-      <div className="px-2 sm:px-4 lg:px-8">
+      <div className="px-2 sm:px-4 lg:px-8 bg-white lg:bg-transparent">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* <!-- Mobile menu button--> */}
@@ -77,7 +77,7 @@ const NavBar = () => {
                 />
               </Link>
             </div>
-            <div className="hidden sm:ml-6 sm:block">
+            <div className="hidden sm:mr-4 lg:mr-0 sm:block">
               <div className="flex space-x-4">
                 <Link
                   href="/about"
