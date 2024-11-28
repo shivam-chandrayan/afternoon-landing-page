@@ -47,6 +47,10 @@ export default function RootLayout({
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
+        <meta
+          name="google-site-verification"
+          content="1iBq5HH43FNXKl4U6HCR75TsjeHOPXAKN8bCKRyLxb8"
+        />
       </Head>
       <body className={`antialiased`}>{children}</body>
     </html>
