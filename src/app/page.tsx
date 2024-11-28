@@ -13,11 +13,11 @@ export default function Home() {
         <img
           src="/hero-bg-graphic.png"
           alt=""
-          className="w-full hidden sm:block"
+          className="w-full hidden md:block"
         />
-        <div className="sm:absolute sm:top-0 sm:left-0 sm:h-1/2 w-full flex items-end justify-center text-center">
-          <div className="px-8 sm:w-1/3">
-            <h1 className="text-3xl sm:text-4xl text-font-primary">
+        <div className="md:absolute md:top-0 md:left-0 md:h-1/2 w-full flex items-end justify-center text-center">
+          <div className="px-8 md:w-1/3">
+            <h1 className="text-3xl md:text-4xl text-font-primary">
               All-in-one bookkeeping and tax platform for ecommerce brands
             </h1>
             <h2 className="text-md mt-4 text-font-secondary">
@@ -36,6 +36,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <img src="/screenshot-cropped.png" alt="" className="pt-20 ml-8" />
 
       <Features />
 

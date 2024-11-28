@@ -10,7 +10,7 @@ const NavBar = () => {
 
   return (
     <nav className="fixed w-screen z-50">
-      <div className="px-2 sm:px-6 lg:px-8">
+      <div className="px-2 sm:px-4 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* <!-- Mobile menu button--> */}

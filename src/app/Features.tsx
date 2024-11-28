@@ -70,12 +70,12 @@ const Features = () => {
   }, []);
 
   return (
-    <div className="features-section mt-24 px-8 sm:mx-40 sm:mt-40 border-primary border-l-4">
-      <h1 className="text-3xl sm:text-4xl text-center text-font-primary">
+    <div className="features-section mt-24 px-8 sm:px-16 md:mx-40 md:mt-40">
+      <h1 className="text-3xl md:text-4xl text-center text-font-primary">
         We help you save time and avoid penalties
       </h1>
       {featuresList.map((feature, index) => (
-        <div key={index} className="pt-12">
+        <div key={index} className="pt-8 border-gray-200 border-b-2 pb-8">
           <h3 className="text-2xl">{feature.title}</h3>
           <p className="mb-8 text-font-secondary text-sm">{feature.desc}</p>
           <div className="text-font-primary text-lg">
@@ -88,7 +88,7 @@ const Features = () => {
           </div>
         </div>
       ))}
-      <div className="hidden sm:block grid grid-cols-2 gap-20 text-font-primary mt-20">
+      <div className="hidden md:block grid grid-cols-2 gap-20 text-font-primary mt-20">
         <div>
           {featuresList.map((feature, index) => (
             <div
