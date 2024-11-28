@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Afternoon Landing Page
+
+A redesign of the landing page for the AI Bookkeeping and tax platform for ecommerce & startup founders - Afternoon.co.
+
+This project is hosted on Vercel and represents a clean, modern design with user-centric features.
+
+Live Demo: [Afternoon Landing Page](https://afternoon-landing-page-rla5.vercel.app/)
+
+## Features
+
+- **Responsive Design**: Optimized for desktop, tablet, and mobile devices.
+- **Next.js Framework**: Utilizes the power of the Next.js App Router for seamless performance.
+- **Tailwind CSS**: Offers a modern, utility-first styling approach for rapid UI development.
+- **Fast Loading**: Leveraging Next.js's server-side rendering (SSR) and static site generation (SSG) for high performance.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Node.js: Make sure Node.js (v16+) is installed on your system.
+Git: Ensure Git is installed for version control.
+
+### Installation
+
+Clone the repository:
+
+```
+git clone https://github.com/your-username/afternoon-landing-page.git
+cd afternoon-landing-page
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Install dependencies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Start the development server:
 
-## Learn More
+```
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Open http://localhost:3000 in your browser to view the page.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Building for Production
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+To build the project for production:
 
-## Deploy on Vercel
+```
+npm run build
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The optimized output will be available in the .next folder.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Deployment
+
+This project is already deployed on Vercel. To deploy your own version:
+
+- Create an account on Vercel.
+- Link your GitHub repository.
+  Vercel will automatically build and deploy your project.
+
+### Folder Structure
+
+src/  
+├── app/  
+├── components/  
+├── styles/  
+├── public/
+
+### Technologies Used
+
+- Next.js
+- React.js
+- Tailwind CSS
+- Vercel
+
+### Screenshots
+
+Here are some previews of the landing page:
+
+![Desktop View](./public/desktop-view.png)
+_Desktop view of the landing page._
+
+### Contributing
+
+Contributions are welcome! If you want to improve this project, feel free to fork the repository and submit a pull request.
+
+### License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
