@@ -19,7 +19,7 @@ const highlightList = [
 
 const Highlights = () => {
   return (
-    <div className="highlightSection mt-24 px-8 sm:px-16 md:mx-40 md:mt-40 mb-20">
+    <div className="highlightSection mt-24 px-8 sm:px-16 lg:mx-20 lg:px-0 xl:mx-40 md:mt-40 mb-20">
       <h1 className="text-3xl md:text-4xl text-center text-font-primary">
         Effortless sales tax compliance
       </h1>
@@ -28,7 +28,7 @@ const Highlights = () => {
         tax in all US states.
       </h2>
 
-      <div className="mt-12 md:mt-20 grid grid-cols-1 sm:grid-cols-2 gap-8 md:mx-40">
+      <div className="mt-12 lg:mt-20 grid grid-cols-1 sm:grid-cols-2 gap-8 lg:mx-20 xl:mx-40">
         {highlightList.map((h, i) => (
           <div key={i} className="flex flex-col items-center text-center">
             <img src={`${h.title}.png`} alt="" className="w-1/3 sm:w-2/3" />

@@ -65,11 +65,11 @@ const NavBar = () => {
               </svg>
             </button>
           </div>
-          <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
+          <div className="flex flex-1 items-center 2xl:pt-4 justify-center sm:items-stretch sm:justify-between">
             <div className="flex shrink-0 items-center">
               <a href="/">
                 <img
-                  className="h-8 w-auto"
+                  className="h-8 xl:h-10 2xl:h-12 w-auto"
                   src="/logo with name.svg"
                   alt="Afternoon co"
                 />
@@ -79,20 +79,20 @@ const NavBar = () => {
               <div className="flex space-x-4">
                 <a
                   href="/about"
-                  className="rounded-md px-3 py-2 text-sm font-medium text-font-primary hover:underline"
+                  className="rounded-md px-3 py-2 text-sm xl:text-lg font-medium text-font-primary hover:underline"
                 >
                   About
                 </a>
                 <a
                   href="https://www.afternoon.co/login"
-                  className="rounded-md px-3 py-2 text-sm font-medium text-font-primary hover:underline"
+                  className="rounded-md px-3 py-2 text-sm xl:text-lg font-medium text-font-primary hover:underline"
                 >
                   Login
                 </a>
                 {/* CTA Button */}
                 <a
                   href="https://cal.com/team/afternoon.co/demo"
-                  className="px-4 py-2 text-white bg-primary hover:bg-font-primary"
+                  className="px-4 py-2 text-white xl:text-lg bg-primary hover:bg-font-primary"
                 >
                   Get Early Access
                 </a>

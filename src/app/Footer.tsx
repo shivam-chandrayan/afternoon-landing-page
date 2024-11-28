@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="bg-primary text-white px-8 py-20">
         <div className="text-center md:w-1/2 mx-auto">
           <h1 className="text-3xl">Ready to get started?</h1>
-          <p className="text-md mt-4 mb-16">
+          <p className="text-md font-medium mt-4 mb-16">
             Focus on growing your business, while Afternoon takes care of your
             bookkeeping, income and sales taxes.
           </p>

@@ -35,7 +35,7 @@ const faq = [
 const FAQ = () => {
   const [openAccordionIndex, setOpenAccordionIndex] = useState(0);
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-20 mt-24 px-8 sm:px-16 mb-24 md:mx-40 md:mt-44 md:mb-20">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-20 mt-24 px-8 sm:px-16 mb-24 lg:px-20 xl:mx-40 lg:mt-44 lg:mb-20">
       <div className="relative">
         {/* Spinning SVG */}
         <div className="absolute inset-0 flex justify-center items-center -z-10">

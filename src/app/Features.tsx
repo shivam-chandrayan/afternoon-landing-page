@@ -70,52 +70,57 @@ const Features = () => {
   }, []);
 
   return (
-    <div className="features-section mt-24 px-8 sm:px-16 md:mx-40 md:mt-40">
+    <div className="features-section mt-24 px-8 sm:px-16 md:px-8 lg:mx-20 xl:mx-40 lg:mt-40">
       <h1 className="text-3xl md:text-4xl text-center text-font-primary">
         We help you save time and avoid penalties
       </h1>
-      {featuresList.map((feature, index) => (
-        <div key={index} className="pt-8 border-gray-200 border-b-2 pb-8">
-          <h3 className="text-2xl">{feature.title}</h3>
-          <p className="mb-8 text-font-secondary text-sm">{feature.desc}</p>
-          <div className="text-font-primary text-lg">
-            {feature.highlights.map((h, i) => (
-              <div className="flex mb-2 gap-2" key={i}>
-                <img className="w-4" src="/circle-check-solid.svg" alt="" />
-                <p className="text-sm">{h}</p>
+      <div className="md:hidden">
+        {featuresList.map((feature, index) => (
+          <div key={index} className="pt-8 border-gray-200 border-b-2 pb-8">
+            <h3 className="text-2xl">{feature.title}</h3>
+            <p className="mb-8 text-font-secondary text-sm">{feature.desc}</p>
+            <div className="text-font-primary text-lg">
+              {feature.highlights.map((h, i) => (
+                <div className="flex mb-2 gap-2" key={i}>
+                  <img className="w-4" src="/circle-check-solid.svg" alt="" />
+                  <p className="text-sm">{h}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="hidden md:block">
+        <div className="grid grid-cols-2 md:gap-8 lg:gap-20 text-font-primary md:mt-8 lg:mt-20">
+          <div>
+            {featuresList.map((feature, index) => (
+              <div
+                className={`p-4 mb-2 cursor-pointer font-medium text-xl ${
+                  activeFeatureIndex === index
+                    ? "bg-primary text-white"
+                    : "bg-gray-100"
+                }`}
+                onClick={() => handleClick(index)}
+                key={index}
+              >
+                {feature.title}
               </div>
             ))}
           </div>
-        </div>
-      ))}
-      <div className="hidden md:block grid grid-cols-2 gap-20 text-font-primary mt-20">
-        <div>
-          {featuresList.map((feature, index) => (
-            <div
-              className={`p-4 mb-2 cursor-pointer font-medium text-xl ${
-                activeFeatureIndex === index
-                  ? "bg-primary text-white"
-                  : "bg-gray-100"
-              }`}
-              onClick={() => handleClick(index)}
-              key={index}
-            >
-              {feature.title}
-            </div>
-          ))}
-        </div>
-        <div className="flex items-center">
-          <div className={`transition-opacity duration-300 ${fadeState}`}>
-            <p className="mb-4 text-font-secondary text-lg">
-              {featuresList[activeFeatureIndex].desc}
-            </p>
-            <div className="text-font-primary text-lg">
-              {featuresList[activeFeatureIndex].highlights.map((h, i) => (
-                <div className="flex mb-2 gap-2" key={i}>
-                  <img className="w-4" src="/circle-check-solid.svg" alt="" />
-                  <div>{h}</div>
-                </div>
-              ))}
+          <div className="flex items-center">
+            <div className={`transition-opacity duration-300 ${fadeState}`}>
+              <p className="mb-4 text-font-secondary text-lg">
+                {featuresList[activeFeatureIndex].desc}
+              </p>
+              <div className="text-font-primary text-lg">
+                {featuresList[activeFeatureIndex].highlights.map((h, i) => (
+                  <div className="flex mb-2 gap-2" key={i}>
+                    <img className="w-4" src="/circle-check-solid.svg" alt="" />
+                    <div>{h}</div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
