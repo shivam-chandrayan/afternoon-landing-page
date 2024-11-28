@@ -9,11 +9,15 @@ export default function Home() {
   return (
     <div>
       <NavBar />
-      <div className="hero-bg-graphic px-20 relative w-full">
-        <img src="/hero-bg-graphic.png" alt="" className="w-full" />
-        <div className="absolute top-0 left-0 h-1/2 w-full flex items-end justify-center text-center">
-          <div className="w-1/3">
-            <h1 className="text-4xl text-font-primary">
+      <div className="hero-bg-graphic pt-28 sm:px-20 sm:relative w-full">
+        <img
+          src="/hero-bg-graphic.png"
+          alt=""
+          className="w-full hidden sm:block"
+        />
+        <div className="sm:absolute sm:top-0 sm:left-0 sm:h-1/2 w-full flex items-end justify-center text-center">
+          <div className="px-8 sm:w-1/3">
+            <h1 className="text-3xl sm:text-4xl text-font-primary">
               All-in-one bookkeeping and tax platform for ecommerce brands
             </h1>
             <h2 className="text-md mt-4 text-font-secondary">

@@ -105,23 +105,23 @@ const NavBar = () => {
       {/* <!-- Mobile menu, show/hide based on menu state. --> */}
       {isMobileMenuOpen && (
         <div className="sm:hidden" id="mobile-menu">
-          <div className="space-y-1 px-2 pb-3 pt-2">
+          <div className="space-y-1 px-2 pb-3 pt-2 bg-white h-screen">
             <a
               href="/about"
-              className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+              className="block rounded-md px-3 py-2 text-base font-medium text-font-secondary"
             >
               About
             </a>
             <a
               href="https://www.afternoon.co/login"
-              className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+              className="block rounded-md px-3 py-2 text-base font-medium text-font-secondary"
             >
               Login
             </a>
             {/* CTA Button */}
             <a
               href="https://cal.com/team/afternoon.co/demo"
-              className="block px-4 py-2 my-2 text-white bg-primary rounded-full hover:bg-primary-dark"
+              className="block px-4 py-2 my-2 text-white bg-primary hover:bg-primary-dark"
             >
               Get Early Access
             </a>

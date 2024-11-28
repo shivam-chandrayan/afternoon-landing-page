@@ -35,7 +35,7 @@ const faq = [
 const FAQ = () => {
   const [openAccordionIndex, setOpenAccordionIndex] = useState(0);
   return (
-    <div className="grid grid-cols-2 gap-20 mx-40 mt-44 mb-20">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-20 mt-24 px-8 mb-24 sm:mx-40 sm:mt-44 sm:mb-20">
       <div className="relative">
         {/* Spinning SVG */}
         <div className="absolute inset-0 flex justify-center items-center -z-10">
@@ -44,7 +44,7 @@ const FAQ = () => {
         <p className="text-font-secondary text-md mb-8">
           Frequently Asked Questions
         </p>
-        <h1 className="text-font-primary text-4xl">
+        <h1 className="text-font-primary text-3xl sm:text-4xl">
           What would you like to know about <strong>Afternoon</strong>?
         </h1>
       </div>
