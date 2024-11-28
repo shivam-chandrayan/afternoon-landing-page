@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Inter, Libre_Baskerville } from "next/font/google";
+import Head from "next/head";
 
+// eslint-disable-next-line
 const inter = Inter({
   subsets: ["latin"],
 });
 
+// eslint-disable-next-line
 const libreBaskerville = Libre_Baskerville({
   subsets: ["latin"],
   weight: ["400"],
@@ -25,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
+      <Head>
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -44,7 +47,7 @@ export default function RootLayout({
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
-      </head>
+      </Head>
       <body className={`antialiased`}>{children}</body>
     </html>
   );

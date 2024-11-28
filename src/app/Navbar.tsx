@@ -1,4 +1,6 @@
 "use client";
+import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 const NavBar = () => {
@@ -67,35 +69,35 @@ const NavBar = () => {
           </div>
           <div className="flex flex-1 items-center 2xl:pt-4 justify-center sm:items-stretch sm:justify-between">
             <div className="flex shrink-0 items-center">
-              <a href="/">
-                <img
+              <Link href="/">
+                <Image
                   className="h-8 xl:h-10 2xl:h-12 w-auto"
                   src="/logo with name.svg"
                   alt="Afternoon co"
                 />
-              </a>
+              </Link>
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
-                <a
+                <Link
                   href="/about"
                   className="rounded-md px-3 py-2 text-sm xl:text-lg font-medium text-font-primary hover:underline"
                 >
                   About
-                </a>
-                <a
+                </Link>
+                <Link
                   href="https://www.afternoon.co/login"
                   className="rounded-md px-3 py-2 text-sm xl:text-lg font-medium text-font-primary hover:underline"
                 >
                   Login
-                </a>
+                </Link>
                 {/* CTA Button */}
-                <a
+                <Link
                   href="https://cal.com/team/afternoon.co/demo"
                   className="px-4 py-2 text-white xl:text-lg bg-primary hover:bg-font-primary"
                 >
                   Get Early Access
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -106,25 +108,25 @@ const NavBar = () => {
       {isMobileMenuOpen && (
         <div className="sm:hidden" id="mobile-menu">
           <div className="space-y-1 px-2 pb-3 pt-2 bg-white h-screen">
-            <a
+            <Link
               href="/about"
               className="block rounded-md px-3 py-2 text-base font-medium text-font-secondary"
             >
               About
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.afternoon.co/login"
               className="block rounded-md px-3 py-2 text-base font-medium text-font-secondary"
             >
               Login
-            </a>
+            </Link>
             {/* CTA Button */}
-            <a
+            <Link
               href="https://cal.com/team/afternoon.co/demo"
               className="block px-4 py-2 my-2 text-white bg-primary hover:bg-primary-dark"
             >
               Get Early Access
-            </a>
+            </Link>
           </div>
         </div>
       )}

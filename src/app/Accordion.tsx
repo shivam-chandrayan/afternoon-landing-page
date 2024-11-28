@@ -1,4 +1,4 @@
-import { useState } from "react";
+import Image from "next/image";
 
 const Accordion = ({
   title,
@@ -9,7 +9,7 @@ const Accordion = ({
   title: string;
   desc: string;
   isOpen: boolean;
-  setOpen: Function;
+  setOpen: (open: boolean) => void;
 }) => {
   return (
     <div>
@@ -19,7 +19,7 @@ const Accordion = ({
       >
         <h2 className="hover:underline">{title}</h2>
         {isOpen ? (
-          <img
+          <Image
             className={`w-4 transform origin-center transition duration-200 ease-out ${
               isOpen && "!rotate-180"
             }`}
@@ -27,7 +27,7 @@ const Accordion = ({
             alt=""
           />
         ) : (
-          <img
+          <Image
             className={`w-4 transform origin-center transition duration-200 ease-out ${
               isOpen && "!rotate-180"
             }`}
@@ -38,12 +38,12 @@ const Accordion = ({
       </div>
       <div
         className={`grid overflow-hidden transition-all duration-300 ease-in-out
-            ${
-              isOpen
-                ? "grid-rows-[1fr] opacity-100 pb-4 mt"
-                : "grid-rows-[0fr] opacity-0"
-            }
-        `}
+              ${
+                isOpen
+                  ? "grid-rows-[1fr] opacity-100 pb-4 mt"
+                  : "grid-rows-[0fr] opacity-0"
+              }
+          `}
       >
         <div className="overflow-hidden text-md text-font-secondary">
           {desc}

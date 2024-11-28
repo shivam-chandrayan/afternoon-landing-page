@@ -1,16 +1,17 @@
 import Features from "@/app/Features";
 import NavBar from "@/app/Navbar";
-import Image from "next/image";
 import Highlights from "./HighLights";
 import Footer from "./Footer";
 import FAQ from "./FAQ";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <div>
       <NavBar />
       <div className="hero-bg-graphic pt-28 sm:px-20 lg:px-0 lg:pt-8 sm:relative w-full">
-        <img
+        <Image
           src="/hero-bg-graphic.png"
           alt=""
           className="w-full hidden lg:block"
@@ -25,23 +26,23 @@ export default function Home() {
               bookkeeping, income and sales taxes.
             </h2>
             <div className="lg:pt-6 xl:pt-8 2xl:pt-16 pt-16">
-              <a
+              <Link
                 className="bg-primary py-4 px-16 mt-8 text-white text-lg 2xl:text-xl font-semibold hover:bg-font-primary"
                 href="https://cal.com/team/afternoon.co/demo"
                 target="_blank"
               >
                 Get Early Access
-              </a>
+              </Link>
             </div>
           </div>
         </div>
       </div>
-      <img
+      <Image
         src="/screenshot-cropped.png"
         alt=""
         className="pt-20 ml-8 md:hidden"
       />
-      <img
+      <Image
         src="/screenshot.png"
         alt=""
         className="pt-20 px-8 hidden md:block lg:hidden"
