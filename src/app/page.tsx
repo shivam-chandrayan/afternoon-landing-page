@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div>
+    <div className="">
       <NavBar />
       <div className="hero-bg-graphic pt-28 sm:px-20 lg:px-0 lg:pt-8 sm:relative w-full">
         <img
@@ -39,7 +39,7 @@ export default function Home() {
       <img
         src="/screenshot-cropped.png"
         alt=""
-        className="pt-20 ml-8 md:hidden"
+        className="pt-20 pl-8 md:hidden"
       />
       <img
         src="/screenshot.png"
